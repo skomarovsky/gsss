@@ -8,4 +8,5 @@
     4. Download Docker community edition for [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows). You must to use version of
        Docker which is support installed on your computer version of Windows' 
     
-      This site was built using [GitHub Pages](https://pages.github.com/).
+      http://github.com - automatic! 
+      [GitHub](http://github.com)
