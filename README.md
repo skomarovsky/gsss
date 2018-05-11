@@ -5,12 +5,22 @@
 2. Clone gsss project from Git [repository](https://github.com/skomarovsky/gsss)
 3. Download or upgrade Java JDK to latest [version](http://www.oracle.com/technetwork/java/javase/downloads/index.html) of SE Developer Kit.
 4. Download or upgrade sbt to latest [version](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html).
-5. Download Docker community edition for [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows). You must use the version of Docker which is supported by Windows version installed on your computer. 
+5. Download and install Docker community edition for [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows). You must use the version of Docker which is supported by Windows version installed on your computer. 
+
+## Changing resources for docker virtual machine
+1. Start Virtual Box Manager and choose `Machine`->`Settings`->`System`->`Matherboard` and change **Base Memory** to 8GB.
+2. Swich to `Processor` tab and set **Processor(s)** to 4.
     
 ## Starting Spark Standalone cluster
 1. Find and start **Docker Quickstart terminal**. It will start Docker Virtual Box machine.
 2. From Windows command prompt change folder to the *gsss/docker* folder.
 3. Type `docker-compose up`. You can monitor startup process in **Docker Quickstart terminal**
+
+## Stopping Spark Standalone cluster
+2. From Windows command prompt change folder to the *gsss/docker* folder.
+3. Type `docker-compose down`. You can monitor shutdown process in **Docker Quickstart terminal**
+
+
 
 ## Connecting to the cluster
 1. Open new windows command prompt.

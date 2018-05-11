@@ -20,7 +20,6 @@ master:
     - 6066:6066
     - 7077:7077
     - 38080:8080
-    - 8888:8888
   volumes:
     - ./spark/conf/master:/conf
     - ./spark/data:/opt/data
@@ -50,3 +49,17 @@ worker:
   volumes:
     - ./spark/conf/worker:/conf
     - ./spark/data:/opt/data
+
+zeppelin:
+  image: apache/zeppelin:0.7.3
+  hostname: zeppelin
+  environment:
+    ZEPPELIN_LOG_DIR: /logs
+    ZEPPELIN_NOTEBOOK_DIR: /notebook
+  links:
+    - master:master
+  ports:
+    - 39080:8080
+  volumes:
+    - ./zeppelin/logs:/logs
+    - ./zeppelin/notebook:/notebook
