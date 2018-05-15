@@ -1,8 +1,8 @@
 master:
-  image: gettyimages/spark
-  command: bin/spark-class org.apache.spark.deploy.master.Master -h master
+  image: skomarovsky/spark-jupyter
   hostname: master
   environment:
+    CMD: bin/spark-class org.apache.spark.deploy.master.Master -h master
     MASTER: spark://master:7077
     SPARK_CONF_DIR: /conf
     SPARK_PUBLIC_DNS: localhost

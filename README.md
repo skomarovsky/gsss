@@ -51,3 +51,19 @@ Now we ready to start spark-shell using the following commands:
 **Note. You start spark-shell from inside master container.**  
 `spark-shell --master local[*] --num-executors 4 --driver-memory 2g --executor-memory 1g`  
 ![result](docs/images/spark-shell.png)
+
+
+## Starting jupyter
+
+Enter code below in the first jupyter cell  
+    var counter = 0  
+    val data = Array(1, 2, 3, 4, 5)  
+    val rdd = sc.parallelize(data)  
+    rdd.foreach(x => counter += x)  
+    println("Counter value: " + counter)
+ 
+
+
+## Downloading Data
+
+http://archive.ics.uci.edu/ml/index.php
