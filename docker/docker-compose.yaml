@@ -1,5 +1,5 @@
 master:
-  image: skomarovsky/spark-jupyter
+  image: skomarovsky/spark-jupyter:0.7.0
   hostname: master
   environment:
     CMD: bin/spark-class org.apache.spark.deploy.master.Master -h master
